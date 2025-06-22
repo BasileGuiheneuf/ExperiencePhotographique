@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+.logo1:hover{
+  opacity: 0.5;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #ff8d1ac8;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  em {
+    color: white;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2 {
+    color: #f9f8ff;
+  }
+  
+  p,
+  li {
+    font-size: 1.1em;
+    color: #f9f8ff;
+  }
+  
+  .entete,
+  .piedpage {
+    background-color: white;
+    display: flex;
+  }
+
+.texte{
+border-right: 1px white solid;
+border-bottom: 1px white solid;
+margin-bottom: 80px;
+text-align: justify;
+}
+
+.lienhypertexte:hover{
+text-decoration: underline;
+}
+
+header, footer{
+  padding: 20px 50px;
+  background-color: white;
+}
+
+section{
+  padding: 80px;
+}
+
+.a-propos-main{
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+}
+
+.a-propos-main h2 {
+  margin-top: 30px;
+}
+
+.texte{
+  padding: 50px;
+}
+
+.texte ul{
+  margin-top: 30px;
+}
+
+header, footer, 
+nav{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+nav a{
+  padding-left: 10px;
+}
+
+.accueil-introduction{
+  display: flex;
+  
+}
+
+.bloctexte {
+  display:inline;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+}
+
+.cta {
+  background: linear-gradient(#f7c945, #fa8750);
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+
+.cta:hover{
+background: linear-gradient(#f37335, #FDC830);
+text-decoration: none;
+}
+
+.selectionphoto{
+  background-color: white;
+  padding: auto;
+
+}
+
+.selectionphoto h2{
+  color: #242424;
+  text-align: center;
+  margin-bottom: 80px;
+
+}
+
+.selectionphoto div {
+  display: flex;
+  flex-direction: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  }
+
+.logoexperience{
+  width: 150px;
+  height: 150px;
+}
+
+footer{
+  display: flex;
+}
+
+header{
+  display: flex;
+}
+
+.logoexperience:hover{
+  opacity: 0.5;
+}
+
+.menu:hover{
+  text-decoration: underline;
+  }
+
+.portefolio_main h1{
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+}
+
+.portefolio_main h2{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.titres2{
+  background-color: white;
+  padding: 80px;
+}
+
+  .titres2 h2{color: #242424;}
+
+.titres2 div{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content:baseline  ;
+  margin-bottom: 15px;
+  width: 326px;
+  height: 326px;
+  }
+
+  .selectionphoto img{
+    opacity: 50%;
+    width: 100%;  /* Permet à l'image de s'adapter à son conteneur */
+    max-width: 300px;  /* Limite la taille des images */
+  }
+
+  
+  .portefolio_main img:hover{
+    opacity: 100%;
+  }
+
+  .selectionphoto :hover{
+    opacity: 100%;
+  }
+
+  .photodeprofil img{
+    width: 326px;
+    height: 326px;
+    margin-bottom: 15px;
+    padding-right: 0px;
+  }
+
+  td{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+    padding: 3px;
+  }
+ 
+  table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+  }
+
+  th{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    border: 1px solid white;
+    padding: 3px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+    body{
+      width: auto;
+    }
+    .entete{
+      background-color: white;
+      padding: 20px 50px;
+    }
+    
+    .portefolio_main h2{
+      display: none;
+    }
+
+    .accueil-introduction{
+      display: flex;
+      flex-direction: column;
+      align-content: baseline;
+      padding: 15px
+    }
+    div{
+      display: flex;
+      flex-direction: column; 
+      flex-wrap: wrap;   
+      align-items: center;
+      justify-content: center;
+      gap: 15px;   
+    
+    }
+    img{
+      width: 150px;
+      height: 150px;
+     
+    }
+
+  .bloctexte{
+    width: auto;
+  }
+  .piedpage, footer{
+    display: none;
+  }
+  
+  .portefolio_main {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne suivante */
+    justify-content: center; /* Centre les images */
+    gap: 10px; /* Réduit l'espace entre les images */
+  }
+    .portefolio_main img,
+    .selectionphoto img{
+    opacity: 100%;
+    width: 326px;
+    height: 326px;
+    margin-bottom: 15px;
+    padding-right: 0px;
+    }
+
+    .portefolio_main{
+      background-color: white;
+    }
+
+    h1{
+      font-size: 2.5em
+    }
+
+    .portefolio_main h1{
+      margin: 0%;
+      padding-left: 150px;
+      padding-right: 150px;
+      background-color: #ff8d1ac8;
+      
+    }
+    
+    .bodyportefolio{
+      background-color: white;
+    }
+
+    .portefolio_main{
+      margin-right: 0%;  
+    }
+  }
+  
+ 
